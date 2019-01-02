@@ -4,28 +4,50 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_marginTop="30dp"
-    android:orientation="horizontal"
-    android:padding="20dp"
+    android:orientation="vertical"
     tools:context=".MainActivity">
 
     <!--TODO(2) Add Layout -->
 
 
-    <Button
-        android:id="@+id/btn_on"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_margin="10dp"
-        android:layout_weight="1"
-        android:text="@string/bluetooth_on" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btn_on"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:text="@string/bluetooth_on" />
+
+        <Button
+            android:id="@+id/btn_off"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:text="@string/bluetooth_off" />
+
+    </LinearLayout>
+
 
     <Button
-        android:id="@+id/btn_off"
-        android:layout_width="0dp"
+        android:id="@+id/btn_show_devices"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
-        android:layout_weight="1"
-        android:text="@string/bluetooth_off" />
+        android:text="@string/show_Devices" />
+
+    <ListView
+        android:background="@color/colorList"
+        android:id="@+id/list_devices"
+        android:layout_margin="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    </ListView>
+
 
 </LinearLayout>
